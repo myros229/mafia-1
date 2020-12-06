@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/main.css" type="text/css" />
+    <script src="src/js/main.js" type="text/javascript"></script> 
+</head>
+
+<body>
+    <div class="addBtn" onclick="MafiaController.scheduleRole()"> Розподіл </div>
+    <table>
+        <tr>
+            <td style="vertical-align: top;">
+                <div>Список гравців</div>
+                <table id="mainTablePlayers" class="mainTable">
+                    <tr>
+                        <th class="firsrTd">
+                            <h3>гравці</h3>
+                        </th>
+                        <th>
+                            <div class="addBtn" onclick="MafiaController.createNewPlayer()">add</div>
+                        </th>
+                    </tr>
+                </table>
+            </td>
+            <td style="vertical-align: top;">
+                <div>Список ролей</div>
+                <table id="mainTableRoles" class="mainTable">
+                    <tr>
+                        <th class="firsrTd">
+                            <h3>ролі</h3>
+                        </th>
+                        <th>
+                            <h3>Кількість</h3>
+                        </th>
+                        <th>
+                            <div class="addBtn" onclick="MafiaController.createNewRole()">add</div>
+                        </th>
+                    </tr>
+                </table>
+            </td>
+            <td id="resultField" style="vertical-align: top;">
+            
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
