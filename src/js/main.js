@@ -62,6 +62,9 @@ let MafiaController = {
             for (j = 0; j < roleElements[i].children[1].children[0].value; j++) {
                 playersRoles.push(roleElements[i].children[0].children[0].value);
             }
+        } 
+        if (playersRoles.length>playersNames.length) {
+            alert("Забагато ролей")
         }
         let playerRolePair = [];
         for (i = 0; i < playersNames.length; i++) {
